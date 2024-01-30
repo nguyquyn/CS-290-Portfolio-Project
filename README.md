@@ -1,4 +1,4 @@
-# OSU-CS-290-Full-Stack-MERN-App
+# Oregon State University Full Stack MERN Application
 
 ```
 To Run Frontend:
