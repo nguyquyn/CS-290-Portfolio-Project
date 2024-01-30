@@ -1,0 +1,99 @@
+### CREATE six documents.
+
+### CREATE 1
+POST http://localhost:3000/destinations HTTP/1.1
+content-type: application/json
+
+{
+    "placeName": "Switzerland",
+    "dateStart": "2023-09-27",
+    "dateEnd": "2023-10-03",
+    "flightPrice": "823.30"
+}
+
+
+### CREATE 2
+POST http://localhost:3000/destinations HTTP/1.1
+content-type: application/json
+
+{
+    "placeName": "Jamaica",
+    "dateStart": "2023-06-25",
+    "dateEnd": "2023-06-29",
+    "flightPrice": "1870.28"
+}
+
+### CREATE 3
+POST http://localhost:3000/destinations HTTP/1.1
+content-type: application/json
+
+{
+    "placeName": "Canada",
+    "dateStart": "2022-08-06",
+    "dateEnd": "2022-08-10",
+    "flightPrice": "268.61"
+}
+
+### CREATE 4
+POST http://localhost:3000/destinations HTTP/1.1
+content-type: application/json
+
+{
+    "placeName": "Hawaii",
+    "dateStart": "2022-07-05",
+    "dateEnd": "2022-07-13",
+    "flightPrice": "665.31"
+}
+
+### CREATE 5
+POST http://localhost:3000/destinations HTTP/1.1
+content-type: application/json
+
+{
+    "placeName": "Japan",
+    "dateStart": "2019-05-21",
+    "dateEnd": "2019-05-31",
+    "flightPrice": "101.54"
+}
+
+### CREATE 6
+POST http://localhost:3000/destinations HTTP/1.1
+content-type: application/json
+
+{
+    "placeName": "South Korea",
+    "dateStart": "2019-05-17",
+    "dateEnd": "2019-05-21",
+    "flightPrice": "1997.58"
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/destinations HTTP/1.1
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/destinations/64d9853a3db37a58f648c520 HTTP/1.1
+
+
+### UPDATE one document's flight price, by ID.
+### Replace the ID in the following request with one that exists
+### and update the flight price:
+PUT http://localhost:3000/destinations/64d9853a3db37a58f648c520 HTTP/1.1
+content-type: application/json
+
+{
+    "placeName": "South Korea",
+    "dateStart": "2019-05-17",
+    "dateEnd": "2019-05-21",
+    "flightPrice": "2004.50"
+}
+
+### DELETE by ID:
+DELETE http://localhost:3000/destinations/64d9853a3db37a58f648c520 HTTP/1.1
+
+
+### RETRIEVE all documents (responds with 5 of the original 6):
+GET http://localhost:3000/destinations HTTP/1.1
+
