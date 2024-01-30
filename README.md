@@ -1,4 +1,4 @@
-# Oregon State University Full Stack MERN Application
+# OSU Full Stack MERN Application
 
 ```
 To Run Frontend:
