@@ -2,13 +2,13 @@
 
 ```
 To Run Frontend:
-1. Run npm start
+1. Run npm install then npm start
 2. Launch in http://localhost:8000/
 
 To Run Backend:
 1. Need MongoDB account
 2. Insert username and password in .env file
-3. Run npm start
+3. Run npm install then npm start
 4. Launch in http://localhost:3000/
 ```
 
